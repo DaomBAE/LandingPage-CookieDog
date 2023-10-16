@@ -5,13 +5,21 @@ import Main from "./pages/Main";
 import Albums from "./pages/Albums";
 
 function App() {
+  
+  const containerStyle = {
+    backgroundColor: '#2B2929', 
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
   return (
     <BrowserRouter>
-      <div className="bg-red-100 min-h-screen flex flex-col">
+      <div style={containerStyle} className="flex flex-col">
         <Header />
         <Routes>
-          <Route path="/" element={<Main/>} />
-          <Route path="/project/:projectIndex" element={< Albums/>} />
+          <Route path="/" element={<Main />} />
+          <Route path="/project/:projectIndex" element={<Albums />} />
         </Routes>
         <Footer />
       </div>

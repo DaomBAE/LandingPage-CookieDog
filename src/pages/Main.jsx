@@ -4,6 +4,7 @@ import Discover from "../components/Discover";
 import Advantages from "../components/Advantages";
 import Projects from "../components/Projects";
 import SoundPack from "../components/SoundPack";
+import Withdraw from "../components/Withdraw";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <Discover/>
       <SoundPack/>
       <Advantages/>
+      <Withdraw/>
       <Register/>
       <Projects/>
     </main>

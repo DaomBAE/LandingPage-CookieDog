@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaTimes } from 'react-icons/fa'; 
+import { IoClose } from 'react-icons/io5'; 
 
 function RegisterModal({ isOpen, onClose, onRegister }) {
   const [formData, setFormData] = useState({
@@ -28,12 +28,12 @@ function RegisterModal({ isOpen, onClose, onRegister }) {
       <div className="bg-white p-6 rounded-xl z-10 w-96"> 
         <form>
           {/* 클로즈 아이콘 추가 */}
-          <div className="text-right mb-4">
+          <div className="text-right">
             <button type="button" onClick={onClose} className="text-gray-400 hover:text-gray-600 transition-colors">
-            <FaTimes style={{ fontSize: '20px' }} />
+            <IoClose style={{ fontSize: '24px' }} />
             </button>
           </div>
-          <div className="mb-4">
+          <div className="mb-2">
             <label htmlFor="artistName">Artist Name</label>
             <input
               type="text"
