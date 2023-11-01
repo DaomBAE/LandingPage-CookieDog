@@ -1,13 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../src/components/container/Footer";
+import Header from "../src/components/container/Header";
 import Main from "./pages/Main";
+import Register from './pages/Register';
 import Albums from "./pages/Albums";
 
 function App() {
   
   const containerStyle = {
-    backgroundColor: '#2B2929', 
+    backgroundColor: 'black', 
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/project/:projectIndex" element={<Albums />} />
         </Routes>
         <Footer />

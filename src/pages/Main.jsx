@@ -1,10 +1,10 @@
-import Register from "../components/Register";
-import Introduce from "../components/Introduce";
-import Discover from "../components/Discover";
-import Advantages from "../components/Advantages";
-import Projects from "../components/Projects";
-import SoundPack from "../components/SoundPack";
-import Withdraw from "../components/Withdraw";
+import Introduce from "../components/container/Introduce";
+import Discover from "../components/container/Discover";
+import Projects from "../components/container/Projects";
+import SoundPack from "../components/container/SoundPack";
+import Withdraw from "../components/container/Withdraw";
+import Community from "../components/container/Community";
+import Register from "./Register";
 
 function Main() {
   return (
@@ -12,10 +12,10 @@ function Main() {
       <Introduce />
       <Discover/>
       <SoundPack/>
-      <Advantages/>
+      <Community/>
       <Withdraw/>
-      <Register/>
       <Projects/>
+      <Register/>
     </main>
   );
 }

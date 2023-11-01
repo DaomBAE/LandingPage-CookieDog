@@ -1,0 +1,19 @@
+.bar-indicator {
+  background-color: #ddd; /* 막대 배경색 */
+  height: 5px; /* 막대 높이 */
+  width: 100%; /* 전체 너비 */
+  margin-top: 10px; /* 사진과 간격 */
+}
+
+.bar-indicator-fill {
+  background-color: #333; /* 채워진 부분 색상 */
+  height: 100%; /* 채워진 부분 높이 (막대와 동일) */
+  width: 0%; /* 초기 너비 */
+  transition: width 0.5s ease; /*전환 효과 */
+}
+
+
+.rounded-top {
+  border-top-left-radius: 1.5rem;  /* 3xl 대응 라운드 값 */
+  border-top-right-radius: 1.5rem; /* 3xl 대응 라운드 값 */
+}

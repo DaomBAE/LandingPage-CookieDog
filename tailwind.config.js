@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sansation': ['Sansation', 'sans-serif'],
+        'hero': ['Hero', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'matahari': ['"Matahari Extended"', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
