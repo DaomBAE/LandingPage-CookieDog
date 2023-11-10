@@ -1,22 +1,22 @@
 [
   {
-    "title": "Project 1",
-    "desc": "This is project 1",
-    "image": "images/project.png"
+    "title": "SoundPack",
+    "desc": "Hunseo",
+    "image": "images/projectcard.png"
   },
   {
-    "title": "Project 2",
-    "desc": "This is project 2",
-    "image": "images/project.png"
+    "title": "SoundPack",
+    "desc": "Hunseo",
+    "image": "images/projectcard.png"
   },
   {
-    "title": "Project 3",
-    "desc": "This is project 3",
-    "image": "images/project.png"
+    "title": "SoundPack",
+    "desc": "Hunseo",
+    "image": "images/projectcard.png"
   },
   {
-    "title": "Project 4",
-    "desc": "This is project 4",
-    "image": "images/project.png"
+    "title": "SoundPack",
+    "desc": "Hunseo",
+    "image": "images/projectcard.png"
   }
 ]

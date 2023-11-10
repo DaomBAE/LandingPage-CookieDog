@@ -3,17 +3,14 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="bg-zinc-900 text-white p-4 md:p-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center mb-4 md:mb-0">
-          <img
-            src="/images/logo.svg" // 로고 이미지
-            alt="Logo"
-            className="w-9 h-9 mr-3" // width: 36px, height: 36px
-          />
-          <p className="text-sm">Copyright © 2023 by CookieDog - All right reserved</p>
-        </div>
-        <nav className="flex gap-4">
+    <footer className="bg-black text-white p-4 md:p-6">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
+        
+          <p className="text-sm text-center mb-0 md:text-left md:mb-0">
+          © 2023 CookieDog, All rights reserved.
+          </p>
+      
+        <nav className="flex gap-4 mb-4 md:mt-0">
           <Link to="/X">
             <img
               src="/images/twitter.svg" // X(twitter)

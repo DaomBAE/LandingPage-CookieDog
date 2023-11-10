@@ -14,8 +14,8 @@ function Main() {
       <SoundPack/>
       <Community/>
       <Withdraw/>
-      <Projects/>
       <Register/>
+      <Projects/>
     </main>
   );
 }

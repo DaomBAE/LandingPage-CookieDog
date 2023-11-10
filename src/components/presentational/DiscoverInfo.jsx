@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 
 function DiscoverInfo() {
-  // 각 카드의 호버 상태를 관리하기 위한 상태
   const [isHovered, setIsHovered] = useState({ card1: false, card2: false, card3: false });
 
-  // 마우스 호버 상태 변경 함수
   const handleMouseEnter = (card) => setIsHovered({ ...isHovered, [card]: true });
   const handleMouseLeave = (card) => setIsHovered({ ...isHovered, [card]: false });
 
   return (
-    <div className="container mx-auto mt-4 sm:mt-6 md:mt-8 px-2 sm:px-4 md:px-6 lg:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
+    <div className="container mx-auto mt-4 sm:mt-6 md:mt-8 px-2 sm:px-2 md:px-4 lg:px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-4 mb-16 justify-center">
         
-        {/* 카드 1 */}
-        <div className="bg-white rounded-3xl shadow-lg p-6 md:p-8 flex flex-col items-start">
-          <img src="path/to/your/image1.jpg" alt="SOUNDPACK" className="w-24 h-24 object-cover rounded-full mb-4"/>
-          <h4 className="text-lg sm:text-xl font-bold font-sansation text-left">Release</h4>
-          <h3 className="text-left text-2xl sm:text-3xl md:text-4xl font-bold font-sansation mt-4">
-            SOUND PACK
-          </h3>
-          <p className="text-left mt-4 text-base sm:text-lg font-medium font-sansation">For Your Super Fan</p>
+        {/* First card */}
+        <div className="bg-black bg-opacity-70 rounded-3xl shadow-lg p-6 sm:p-8 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <img src="path/to/your/image1.jpg" alt="SOUNDPACK" className="w-32 h-32 object-cover rounded-full mb-4 mx-auto"/>
+            <h4 className="text-xl font-bold font-sansation text-white">Release</h4>
+            <h3 className="text-4xl font-bold font-sansation mt-4 text-white"> 
+              SOUND PACK
+            </h3>
+            <p className="mt-4 text-xl font-medium font-sansation text-white">For Your Super Fan</p> 
+          </div>
           <button
             type="button"
             onMouseEnter={() => handleMouseEnter('card1')}
@@ -30,20 +30,22 @@ function DiscoverInfo() {
             } text-white transition-colors duration-150`}
           >
             <span>See All</span>
-            <div className={`px-4 py-1 rounded-lg ml-4 ${isHovered.card1 ? 'bg-green-600' : 'bg-green-400'}`}>
-              <HiOutlineArrowRight size={20} color="black" />
+            <div className={`px-4 py-0.5 rounded-lg ml-4 ${isHovered.card1 ? 'bg-pink-600' : 'bg-pink-400'}`}>
+              <HiOutlineArrowRight size={24} className="text-black" />
             </div>
           </button>
         </div>
 
-        {/* 카드 2 */}
-        <div className="bg-white rounded-3xl shadow-lg p-6 md:p-8 flex flex-col items-start">
-          <img src="path/to/your/image2.jpg" alt="COMMUNITY" className="w-24 h-24 object-cover rounded-full mb-4"/>
-          <h3 className="text-lg sm:text-xl font-bold font-sansation text-left">Connect & Build</h3>
-          <p className="text-left text-2xl sm:text-3xl md:text-4xl font-bold font-sansation mt-4">
-            COMMUNITY
-          </p>
-          <p className="text-left mt-4 text-base sm:text-lg font-medium font-sansation">For Your Super Fan</p>
+        {/* Second card */}
+        <div className="bg-black bg-opacity-70 rounded-3xl shadow-lg p-6 sm:p-8 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <img src="path/to/your/image2.jpg" alt="COMMUNITY" className="w-32 h-32 object-cover rounded-full mb-4 mx-auto"/>
+            <h3 className="text-xl font-bold font-sansation text-white">Connect & Build</h3>
+            <p className="text-4xl font-bold font-sansation mt-4 text-white">
+              COMMUNITY
+            </p>
+            <p className="mt-4 text-xl font-medium font-sansation text-white">For Your Super Fan</p> 
+          </div>
           <button
             type="button"
             onMouseEnter={() => handleMouseEnter('card2')}
@@ -53,21 +55,22 @@ function DiscoverInfo() {
             } text-white transition-colors duration-150`}
           >
             <span>See All</span>
-            <div className={`px-4 py-1 rounded-lg ml-4 ${isHovered.card2 ? 'bg-green-600' : 'bg-green-400'}`}>
-              <HiOutlineArrowRight size={20} color="black" />
+            <div className={`px-4 py-0.5 rounded-lg ml-4 ${isHovered.card2 ? 'bg-pink-600' : 'bg-pink-400'}`}>
+              <HiOutlineArrowRight size={24} className="text-black" />
             </div>
           </button>
         </div>
 
-        {/* 카드 3 */}
-        <div className="bg-white rounded-3xl shadow-lg p-6 md:p-8 flex flex-col items-start">
-          <img src="path/to/your/image3.jpg" alt="WITHDRAW" className="w-24 h-24 object-cover rounded-full mb-4"/>
-          <h3 className="text-lg sm:text-xl font-bold font-sansation text-left">Fast & Transparent</h3>
-          <h2 className="text-left text-2xl sm:text-3xl md:text-4xl font-bold font-sansation mt-4">
-            WITHDRAW
-          </h2>
-          
-          <p className="text-left mt-4 text-base sm:text-lg font-medium font-sansation">For Your Super Fan</p>
+        {/* Third card */}
+        <div className="bg-black bg-opacity-70 rounded-3xl shadow-lg p-6 sm:p-8 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <img src="path/to/your/image3.jpg" alt="WITHDRAW" className="w-32 h-32 object-cover rounded-full mb-4 mx-auto"/>
+            <h3 className="text-xl font-bold font-sansation text-white">Fast & Transparent</h3>
+            <h2 className="text-4xl font-bold font-sansation mt-4 text-white"> 
+              WITHDRAW
+            </h2>
+            <p className="mt-4 text-xl font-medium font-sansation text-white">For Your Super Fan</p> 
+          </div>
           <button
             type="button"
             onMouseEnter={() => handleMouseEnter('card3')}
@@ -77,8 +80,8 @@ function DiscoverInfo() {
             } text-white transition-colors duration-150`}
           >
             <span>See All</span>
-            <div className={`px-4 py-1 rounded-lg ml-4 ${isHovered.card3 ? 'bg-green-600' : 'bg-green-400'}`}>
-              <HiOutlineArrowRight size={20} color="black" />
+            <div className={`px-4 py-0.5 rounded-lg ml-4 ${isHovered.card3 ? 'bg-pink-600' : 'bg-pink-400'}`}>
+              <HiOutlineArrowRight size={24} className="text-black" />
             </div>
           </button>
         </div>
@@ -89,5 +92,3 @@ function DiscoverInfo() {
 }
 
 export default DiscoverInfo;
-
-
